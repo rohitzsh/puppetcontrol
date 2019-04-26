@@ -1,10 +1,11 @@
 # Class: minecraft
 # Creating minecraft module
 #
-class minecraft {
+class minecraft (
     # parameters
-    $url = 'https://launcher.mojang.com/v1/objects/f1a0073671057f01aa843443fef34330281333ce/server.jar'
+    $url = 'https://launcher.mojang.com/v1/objects/f1a0073671057f01aa843443fef34330281333ce/server.jar',
     $install_dir = '/opt/minecraft'
+    ){
     # resources
     file { $install_dir:
         ensure => directory,
