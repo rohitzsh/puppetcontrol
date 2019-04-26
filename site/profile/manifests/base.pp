@@ -3,6 +3,7 @@
 #
 class profile::base {
 	# resources
+	include profile::ssh_server
 	user { 'admin':
 	  ensure  => present,
 	  comment => 'Admin',
